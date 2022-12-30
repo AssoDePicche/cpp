@@ -3,23 +3,17 @@
 
 int max_of_four(int a, int b, int c, int d)
 {
-    int max = a;
+    int max = 0;
 
-    if (max < b)
+    int numbers[4] = {a, b, c, d};
+
+    for (int i = 0; i < 4; i++)
     {
-        max = b;
+        if (max < numbers[i]) {
+            max = numbers[i];
+        }
     }
-
-    if (max < c)
-    {
-        max = c;
-    }
-
-    if (max < d)
-    {
-        max = d;
-    }
-
+    
     return max;
 }
 
