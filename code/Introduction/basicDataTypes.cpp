@@ -1,12 +1,15 @@
 #include <iostream>
-#include <cstdio>
 
 int main()
 {
     int d;
+
     long ld;
+
     char c;
+
     float f;
+
     double lf;
 
     scanf("%d %ld %c %f %lf", &d, &ld, &c, &f, &lf);
