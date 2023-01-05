@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cstdio>
 
 int max_of_four(int a, int b, int c, int d)
 {
@@ -9,11 +8,12 @@ int max_of_four(int a, int b, int c, int d)
 
     for (int i = 0; i < 4; i++)
     {
-        if (max < numbers[i]) {
+        if (max < numbers[i])
+        {
             max = numbers[i];
         }
     }
-    
+
     return max;
 }
 
