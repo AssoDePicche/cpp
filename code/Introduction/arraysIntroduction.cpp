@@ -1,27 +1,23 @@
-#include <cmath>
-#include <cstdio>
-#include <vector>
 #include <iostream>
-#include <algorithm>
 
 int main()
 {
     int arraySize;
 
-    std::cin >> arraySize;
+    scanf("%d", &arraySize);
 
     int array[arraySize];
 
     for (int i = 0; i < arraySize; i++)
     {
-        std::cin >> array[i];
+        scanf("%d", &array[i]);
     }
 
     arraySize--;
 
     while (arraySize >= 0)
     {
-        std::cout << array[arraySize] << " ";
+        printf("%d ", array[arraySize]);
 
         arraySize--;
     }
