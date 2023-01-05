@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cmath>
 
 void update(int *a, int *b)
 {
@@ -12,8 +11,7 @@ void update(int *a, int *b)
 
 int main()
 {
-    int a, b;
-    int *pa = &a, *pb = &b;
+    int a, b, *pa = &a, *pb = &b;
 
     scanf("%d %d", &a, &b);
 
