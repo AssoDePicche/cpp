@@ -1,26 +1,23 @@
 #include <iostream>
 
-int main()
-{
-    int arraySize;
+int main() {
+  int arraySize;
 
-    scanf("%d", &arraySize);
+  scanf("%d", &arraySize);
 
-    int array[arraySize];
+  int array[arraySize];
 
-    for (int i = 0; i < arraySize; i++)
-    {
-        scanf("%d", &array[i]);
-    }
+  for (int i = 0; i < arraySize; i++) {
+    scanf("%d", &array[i]);
+  }
+
+  arraySize--;
+
+  while (arraySize >= 0) {
+    printf("%d ", array[arraySize]);
 
     arraySize--;
-
-    while (arraySize >= 0)
-    {
-        printf("%d ", array[arraySize]);
-
-        arraySize--;
-    }
-
-    return 0;
+  }
+ 
+  return 0;
 }
