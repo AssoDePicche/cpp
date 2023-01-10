@@ -1,23 +1,21 @@
 #include <iostream>
 
-void update(int *a, int *b)
-{
-    int temp = *a;
+void update(int *a, int *b) {
+  int temp = *a;
 
-    *a += *b;
+  *a += *b;
 
-    *b = abs(temp - *b);
+  *b = abs(temp - *b);
 }
 
-int main()
-{
-    int a, b, *pa = &a, *pb = &b;
+int main() {
+  int a, b, *pa = &a, *pb = &b;
 
-    scanf("%d %d", &a, &b);
+  scanf("%d %d", &a, &b);
 
-    update(pa, pb);
+  update(pa, pb);
 
-    printf("%d\n%d", a, b);
+  printf("%d\n%d", a, b);
 
-    return 0;
+  return 0;
 }
