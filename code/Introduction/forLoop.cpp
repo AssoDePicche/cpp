@@ -1,65 +1,29 @@
 #include <iostream>
-#include <cstdio>
-#include <string>
+#include <vector>
 
-void toString(int number)
-{
-    switch (number)
-    {
-    case 1:
-        std::cout << "one\n";
-        break;
-    case 2:
-        std::cout << "two\n";
-        break;
-    case 3:
-        std::cout << "three\n";
-        break;
-    case 4:
-        std::cout << "four\n";
-        break;
-    case 5:
-        std::cout << "five\n";
-        break;
-    case 6:
-        std::cout << "six\n";
-        break;
-    case 7:
-        std::cout << "seven\n";
-        break;
-    case 8:
-        std::cout << "eight\n";
-        break;
-    case 9:
-        std::cout << "nine\n";
-        break;
-    }
-}
+int main() {
+  std::vector<std::string> numbers = {"one","two","three","four","five","six",
+  "seven","eight","nine"};
 
-int main()
-{
-    int a, b;
+  int a, b;
 
-    std::cin >> a >> b;
+  scanf("%d %d", &a, &b);
 
-    for (a; a <= b; a++)
-    {
-        if (a <= 9)
-        {
-            toString(a);
+  for (a; a <= b; a++) {
+    if (a <= 9) {
+      std::cout << numbers.at(a - 1) << "\n";
 
-            continue;
-        }
-
-        if (a % 2 == 0)
-        {
-            std::cout << "even\n";
-
-            continue;
-        }
-
-        std::cout << "odd\n";
+      continue;
     }
 
-    return 0;
+    if (a % 2 == 0) {
+      printf("even\n");
+
+      continue;
+    }
+
+    printf("odd\n");
+  }
+
+  return 0;
 }
