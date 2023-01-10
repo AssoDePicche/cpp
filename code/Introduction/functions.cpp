@@ -1,7 +1,6 @@
 #include <iostream>
 
-int max_of_four(int a, int b, int c, int d)
-{
+int max_of_four(int a, int b, int c, int d) {
   int max = 0;
 
   int numbers[4] = {a, b, c, d};
