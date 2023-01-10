@@ -1,51 +1,21 @@
 #include <iostream>
+#include <vector>
 
-void toString(int number)
-{
-    switch (number)
-    {
-    case 1:
-        std::cout << "one\n";
-        break;
-    case 2:
-        std::cout << "two\n";
-        break;
-    case 3:
-        std::cout << "three\n";
-        break;
-    case 4:
-        std::cout << "four\n";
-        break;
-    case 5:
-        std::cout << "five\n";
-        break;
-    case 6:
-        std::cout << "six\n";
-        break;
-    case 7:
-        std::cout << "seven\n";
-        break;
-    case 8:
-        std::cout << "eight\n";
-        break;
-    case 9:
-        std::cout << "nine\n";
-        break;
-    }
-}
+int main() {
+  std::vector<std::string> numbers = {"one","two","three","four","five","six",
+  "seven","eight","nine"};
 
-int main()
-{
-    int n;
+  int n;
 
-    std::cin >> n;
+  scanf("%d", &n);
 
-    if (n > 9)
-    {
-        std::cout << "Greater than 9";
-    }
+  if (n > 9) {
+    printf("Greater than 9\n");
 
-    toString(n);
+    return;
+  }
 
-    return 0;
+  std::cout << numbers.at(n - 1);
+
+  return 0;
 }
