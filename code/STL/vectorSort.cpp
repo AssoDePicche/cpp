@@ -1,30 +1,28 @@
-#include <iostream>
 #include <algorithm>
+#include <iostream>
 #include <vector>
 
-int main()
-{
-    int n;
 
-    std::vector<int> vector;
+int main() {
+  int n;
 
-    scanf("%d", &n);
+  std::vector<int> vector;
 
-    for (int i = 0; i < n; i++)
-    {
-        int input;
+  scanf("%d", &n);
 
-        scanf("%d", &input);
+  for (int i = 0; i < n; i++) {
+    int input;
 
-        vector.push_back(input);
-    }
+    scanf("%d", &input);
 
-    std::sort(vector.begin(), vector.end());
+    vector.push_back(input);
+  }
 
-    for (int j = 0; j < n; j++)
-    {
-        printf("%d ", vector.at(j));
-    }
+  std::sort(vector.begin(), vector.end());
 
-    return 0;
+  for (int element : vector) {
+    printf("%d ", element);
+  }
+
+  return 0;
 }
