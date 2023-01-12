@@ -2,15 +2,15 @@
 #include <map>
 
 int main() {
-  int query, input, mark;
+  int queries, input, mark;
 
   std::map<std::string, int> map;
 
   std::string student;
 
-  std::cin >> query;
+  std::cin >> queries;
 
-  for (int i = query; i != 0; i--) {
+  for (int i = queries; i != 0; i--) {
     std::cin >> input >> student;
 
     switch (input) {
