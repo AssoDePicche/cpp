@@ -2,28 +2,26 @@
 #include <set>
 
 int main() {
-  int q, x, y;
+  int queries, input, number;
 
   std::set<int> set;
 
-  scanf("%d", &q);
+  scanf("%d", &queries);
 
-  for (int i = q; i != 0; i--) {
-    scanf("%d %d", &y, &x);
+  for (int i = queries; i != 0; i--) {
+    scanf("%d %d", &input, &number);
 
-    switch (y) {
+    switch (input) {
       case 1:
-        set.insert(x);
+        set.insert(number);
         break;
       
       case 2:
-        set.erase(x);
+        set.erase(number);
         break;
       
       case 3:
-        std::set<int>::iterator iterator = set.find(x);
-
-        if (iterator == set.end()) {
+        if (set.find(number) == set.end()) {
           printf("No\n");
           
           continue;
