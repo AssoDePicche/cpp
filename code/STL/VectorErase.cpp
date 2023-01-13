@@ -8,7 +8,7 @@ int main() {
 
   std::cin >> input;
 
-  while (input != 0) {
+  while (input > 0) {
     std::cin >> integer;
 
     vector.push_back(integer);
@@ -24,10 +24,10 @@ int main() {
 
   vector.erase(vector.begin() + b - 1, vector.begin() + c - 1);
 
-  std::cout << vector.size() << "\n";
+  std::cout << vector.size() << '\n';
 
   for (int element : vector) {
-    std::cout << element << " ";
+    std::cout << element << ' ';
   }
 
   return 0;
