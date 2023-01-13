@@ -2,14 +2,14 @@
 #include <set>
 
 int main() {
-  int queries, input, number;
+  int queries, input, number, i;
 
   std::set<int> set;
 
-  scanf("%d", &queries);
+  std::cin >> queries;
 
-  for (int i = queries; i != 0; i--) {
-    scanf("%d %d", &input, &number);
+  for (i = queries; i > 0; i--) {
+    std::cin >> input >> number;
 
     switch (input) {
       case 1:
@@ -22,12 +22,12 @@ int main() {
       
       case 3:
         if (set.find(number) == set.end()) {
-          printf("No\n");
+          std::cout << "No\n";
           
           continue;
         }
 
-        printf("Yes\n");
+        std::cout << "Yes\n";
         break;
     }
   }
