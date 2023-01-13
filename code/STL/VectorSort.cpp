@@ -2,26 +2,25 @@
 #include <iostream>
 #include <vector>
 
-
 int main() {
-  int n;
+  int integers, input;
 
   std::vector<int> vector;
 
-  scanf("%d", &n);
+  std::cin >> integers;
 
-  for (int i = 0; i < n; i++) {
-    int input;
-
-    scanf("%d", &input);
+  while (integers > 0) {
+    std::cin >> input;
 
     vector.push_back(input);
+
+    integers--;
   }
 
   std::sort(vector.begin(), vector.end());
 
   for (int element : vector) {
-    printf("%d ", element);
+    std::cout << element << ' ';
   }
 
   return 0;
