@@ -2,7 +2,7 @@
 #include <map>
 
 int main() {
-  int queries, input, mark;
+  int queries, input, mark, i;
 
   std::map<std::string, int> map;
 
@@ -10,7 +10,7 @@ int main() {
 
   std::cin >> queries;
 
-  for (int i = queries; i != 0; i--) {
+  for (i = queries; i > 0; i--) {
     std::cin >> input >> student;
 
     switch (input) {
@@ -30,8 +30,8 @@ int main() {
         map.erase(student);
         break;
 
-      case 3:        
-        printf("%d\n", map[student]);
+      case 3:
+        std::cout << map[student] << '\n';
         break;
     }
   }
