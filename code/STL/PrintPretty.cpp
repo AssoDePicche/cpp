@@ -17,15 +17,15 @@ int main() {
 
     std::cout << std::hex << std::left << std::showbase << std::nouppercase;
 
-    std::cout << (long long) A << "\n";
+    std::cout << (long long) A << '\n';
 
     std::cout << std::dec << std::right << std::setw(15) << std::setfill('_') << std::showpos << std::fixed << std::setprecision(2);
 
-    std::cout << B << "\n";
+    std::cout << B << '\n';
 
     std::cout << std::scientific << std::uppercase << std::noshowpos << std::setprecision(9);
 
-    std::cout << C << "\n";
+    std::cout << C << '\n';
   }
 
   return 0;
