@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 
 class Student {
   private:
@@ -11,7 +12,7 @@ class Student {
       for (int i = 0; i < 5; i++) {
         int score;
 
-        scanf("%d", &score);
+        std::cin >> score;
 
         scores.push_back(score);
 
