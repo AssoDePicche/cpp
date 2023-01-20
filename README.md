@@ -1,6 +1,6 @@
 # C++
 
-Codes used during my preparation to earn my five-star medal in C++ in HackerRank
+HackerRank's C++ challenges.
 
 ## Topics
 
