@@ -11,11 +11,11 @@ void update(int *a, int *b) {
 int main() {
   int a, b, *pa = &a, *pb = &b;
 
-  scanf("%d %d", &a, &b);
+  std::cin >> a >> b;
 
   update(pa, pb);
 
-  printf("%d\n%d", a, b);
+  std::cout << a << "\n" << b;
 
   return 0;
 }

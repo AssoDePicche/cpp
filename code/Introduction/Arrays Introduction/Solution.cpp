@@ -3,18 +3,18 @@
 int main() {
   int arraySize;
 
-  scanf("%d", &arraySize);
+  std::cin >> arraySize;
 
   int array[arraySize];
 
   for (int i = 0; i < arraySize; i++) {
-    scanf("%d", &array[i]);
+    std::cin >> array[i];
   }
 
   arraySize--;
 
   while (arraySize >= 0) {
-    printf("%d ", array[arraySize]);
+    std::cout << array[arraySize] << ' ';
 
     arraySize--;
   }

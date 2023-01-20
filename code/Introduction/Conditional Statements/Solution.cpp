@@ -7,15 +7,13 @@ int main() {
 
   int n;
 
-  scanf("%d", &n);
+  std::cin >> n;
 
   if (n > 9) {
-    printf("Greater than 9\n");
-
-    return;
+    std::cout << "Greater than 9\n";
+  } else {
+    std::cout << numbers.at(n - 1);
   }
-
-  std::cout << numbers.at(n - 1);
 
   return 0;
 }

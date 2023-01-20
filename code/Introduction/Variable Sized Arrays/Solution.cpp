@@ -5,15 +5,15 @@ int main() {
 
   std::vector<std::vector<int>> matrix;
 
-  scanf("%d %d", &n, &q);
+  std::cin >> n >> q;
 
   for (int i = 0; i < n; i++) {
     std::vector<int> vector;
 
-    scanf("%d", &size);
+    std::cin >> size;
 
     for (int j = 0; j < size; j++) {
-      scanf("%d", &value);
+      std::cin >> value;
 
       vector.push_back(value);
     }
@@ -22,9 +22,9 @@ int main() {
   }
 
   for (int k = 0; k < q; k++) {
-    scanf("%d %d", &column, &index);
+    std::cin >> column >> index;
 
-    printf("%d\n", matrix[column][index]);
+    std::cout << matrix[column][index] << "\n";
   }
 
   return 0;

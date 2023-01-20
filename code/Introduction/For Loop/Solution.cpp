@@ -7,7 +7,7 @@ int main() {
 
   int a, b;
 
-  scanf("%d %d", &a, &b);
+  std::cin >> a >> b;
 
   for (a; a <= b; a++) {
     if (a <= 9) {
@@ -17,12 +17,12 @@ int main() {
     }
 
     if (a % 2 == 0) {
-      printf("even\n");
+      std::cout << "even\n";
 
       continue;
     }
-
-    printf("odd\n");
+    
+    std::cout << "odd\n";
   }
 
   return 0;
