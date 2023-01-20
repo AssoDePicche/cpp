@@ -24,7 +24,7 @@ int main() {
 
   vector.erase(vector.begin() + b - 1, vector.begin() + c - 1);
 
-  std::cout << vector.size() << '\n';
+  std::cout << vector.size() << "\n";
 
   for (int element : vector) {
     std::cout << element << ' ';
