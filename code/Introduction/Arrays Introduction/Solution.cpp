@@ -18,6 +18,6 @@ int main() {
 
     arraySize--;
   }
- 
+
   return 0;
 }
