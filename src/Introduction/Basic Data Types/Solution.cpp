@@ -1,19 +1,20 @@
 #include <iostream>
 
-int main() {
-  int d;
+int main()
+{
+  int a;
 
-  long ld;
+  long long int b;
 
   char c;
 
-  float f;
+  float d;
 
-  double lf;
+  double e;
 
-  std::cin >> d >> ld >> c >> f >> lf;
+  scanf("%d %lld %c %f %lf", &a, &b, &c, &d, &e);
 
-  std::cout << d << "\n" << ld << "\n" << c << "\n" << f << "\n" << lf;
+  printf("%d\n%lld\n%c\n%f\n%lf", a, b, c, d, e);
 
   return 0;
 }
