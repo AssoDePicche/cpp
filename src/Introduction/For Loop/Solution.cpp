@@ -1,28 +1,32 @@
 #include <iostream>
-#include <vector>
 
-int main() {
-  std::vector<std::string> numbers = {"one","two","three","four","five","six",
-  "seven","eight","nine"};
+bool is_even(const int number)
+{
+  return number % 2 == 0;
+}
 
-  int a, b;
+int main()
+{
+  std::string numbers[9] = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
 
-  std::cin >> a >> b;
+  int start, end;
 
-  for (a; a <= b; a++) {
-    if (a <= 9) {
-      std::cout << numbers.at(a - 1) << "\n";
+  std::cin >> start >> end;
 
-      continue;
+  for (start; start <= end; start++)
+  {
+    if (start > 0 && start <= 9)
+    {
+      std::cout << numbers[start - 1] << std::endl;
     }
-
-    if (a % 2 == 0) {
-      std::cout << "even\n";
-
-      continue;
+    else if (is_even(start))
+    {
+      std::cout << "even" << std::endl;
     }
-    
-    std::cout << "odd\n";
+    else
+    {
+      std::cout << "odd" << std::endl;
+    }
   }
 
   return 0;
