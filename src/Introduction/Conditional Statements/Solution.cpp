@@ -1,18 +1,20 @@
 #include <iostream>
-#include <vector>
 
-int main() {
-  std::vector<std::string> numbers = {"one","two","three","four","five","six",
-  "seven","eight","nine"};
+int main()
+{
+  std::string numbers[9] = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
 
-  int n;
+  int number;
 
-  std::cin >> n;
+  std::cin >> number;
 
-  if (n > 9) {
-    std::cout << "Greater than 9\n";
-  } else {
-    std::cout << numbers.at(n - 1);
+  if (number > 9)
+  {
+    std::cout << "Greater than 9" << std::endl;
+  }
+  else
+  {
+    std::cout << numbers[number - 1] << std::endl;
   }
 
   return 0;
