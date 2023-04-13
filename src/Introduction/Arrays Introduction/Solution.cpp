@@ -1,22 +1,21 @@
 #include <iostream>
 
-int main() {
-  int arraySize;
+int main()
+{
+  int arraySize, index;
 
   std::cin >> arraySize;
 
   int array[arraySize];
 
-  for (int i = 0; i < arraySize; i++) {
-    std::cin >> array[i];
+  for (index = 0; index < arraySize; index++)
+  {
+    std::cin >> array[index];
   }
 
-  arraySize--;
-
-  while (arraySize >= 0) {
-    std::cout << array[arraySize] << ' ';
-
-    arraySize--;
+  while (--arraySize >= 0)
+  {
+    std::cout << array[arraySize] << " ";
   }
 
   return 0;
