@@ -1,7 +1,8 @@
 #include <iostream>
 #include "./Student.cpp"
 
-int main() {
+int main()
+{
   int age, standard;
 
   std::string first_name, last_name;
@@ -18,11 +19,12 @@ int main() {
 
   student.set_last_name(last_name);
 
-  std::cout << student.get_age() << "\n";
+  std::cout << student.get_age() << std::endl;
 
-  std::cout << student.get_last_name() << ", " << student.get_first_name() << "\n";
+  std::cout << student.get_last_name() << ", " << student.get_first_name() << std::endl;
 
-  std::cout << student.get_standard() << "\n" << "\n";
+  std::cout << student.get_standard() << std::endl
+            << std::endl;
 
   std::cout << student.to_string();
 
