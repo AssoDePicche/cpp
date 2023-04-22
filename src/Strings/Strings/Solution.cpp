@@ -1,21 +1,24 @@
 #include <iostream>
 
-int main() {
+int main()
+{
   std::string a, b;
+
+  char temp;
 
   std::cin >> a >> b;
 
-  std::cout << a.size() << ' ' << b.size() << "\n";
+  std::cout << a.size() << ' ' << b.size() << std::endl;
 
-  std::cout << a + b << "\n";
+  std::cout << a + b << std::endl;
 
-  char temp = a[0];
+  temp = a[0];
 
   a[0] = b[0];
 
   b[0] = temp;
 
-  std::cout << a << ' ' << b << "\n";
+  std::cout << a << ' ' << b << std::endl;
 
   return 0;
 }
