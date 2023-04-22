@@ -1,11 +1,11 @@
-FILENAME =
+FILENAME = ""
 COMPILER = g++
-COMPILER_FLAGS = -Wall
+COMPILER_FLAGS = -o $(FILENAME).exe
 
 default: compile
 
 compile:
-	$(COMPILER) $(FILENAME).cpp -o $(FILENAME).exe
+	$(COMPILER) $(FILENAME).cpp $(COMPILER_FLAGS)
 
 clean:
 	rm -f src/*/*/*.exe
