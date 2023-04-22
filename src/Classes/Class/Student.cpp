@@ -1,47 +1,43 @@
 #include <iostream>
 #include "./Student.h"
 
-int Student::get_age()
+Student::Student(std::string first_name, std::string last_name, int age, int standard)
 {
-  return age;
+  _first_name = first_name;
+
+  _last_name = last_name;
+
+  _age = age;
+
+  _standard = standard;
 }
 
-void Student::set_age(int _age)
+int Student::get_age()
 {
-  age = _age;
+  return _age;
 }
 
 std::string Student::get_first_name()
 {
-  return first_name;
-}
-
-void Student::set_first_name(std::string _first_name)
-{
-  first_name = _first_name;
+  return _first_name;
 }
 
 std::string Student::get_last_name()
 {
-  return last_name;
+  return _last_name;
 }
 
-void Student::set_last_name(std::string _last_name)
+std::string Student::get_full_name()
 {
-  last_name = _last_name;
+  return _last_name + ", " + _first_name;
 }
 
 int Student::get_standard()
 {
-  return standard;
-}
-
-void Student::set_standard(int _standard)
-{
-  standard = _standard;
+  return _standard;
 }
 
 std::string Student::to_string()
 {
-  return std::to_string(age) + "," + first_name + "," + last_name + "," + std::to_string(standard);
+  return std::to_string(_age) + "," + _first_name + "," + _last_name + "," + std::to_string(_standard);
 }
