@@ -2,27 +2,23 @@
 
 class Student
 {
-  private:
-    int age, standard;
+private:
+  int _age, _standard;
 
-    std::string first_name, last_name;
+  std::string _first_name, _last_name;
 
-  public:
-    int get_age();
+public:
+  Student(std::string first_name, std::string last_name, int age, int standard);
 
-    void set_age(int _age);
+  int get_age();
 
-    std::string get_first_name();
+  std::string get_first_name();
 
-    void set_first_name(std::string _first_name);
+  std::string get_last_name();
 
-    std::string get_last_name();
+  std::string get_full_name();
 
-    void set_last_name(std::string _last_name);
+  int get_standard();
 
-    int get_standard();
-
-    void set_standard(int _standard);
-
-    std::string to_string();
+  std::string to_string();
 };
