@@ -7,26 +7,24 @@ bool is_even(const int number)
 
 int main()
 {
-  std::string numbers[9] = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
+  const std::string list[9] = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
 
   int start, end;
 
   std::cin >> start >> end;
 
-  for (start; start <= end; start++)
+  while (start++ <= end)
   {
-    if (start > 0 && start <= 9)
+    bool in_list = (start > 0) && (start < 10);
+
+    if (in_list)
     {
-      std::cout << numbers[start - 1] << std::endl;
+      std::cout << list[start - 1] << std::endl;
     }
-    else if (is_even(start))
-    {
-      std::cout << "even" << std::endl;
-    }
-    else
-    {
-      std::cout << "odd" << std::endl;
-    }
+
+    std::string message = is_even(start) ? "even" : "odd";
+
+    std::cout << message << std::endl;
   }
 
   return 0;
