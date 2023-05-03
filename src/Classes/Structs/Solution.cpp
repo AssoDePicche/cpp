@@ -1,7 +1,8 @@
 #include <iostream>
-#include "./Student.cpp"
+#include "Student.hpp"
 
-int main() {
+int main()
+{
   Student student;
 
   std::cin >> student.age >> student.first_name >> student.last_name >> student.standard;
