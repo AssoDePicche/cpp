@@ -1,14 +1,17 @@
-FILENAME =
-COMPILER = g++
+FILENAME       =
+SOURCE_FOLDER  =
+SOURCE_FILE    = $(SOURCE_FOLDER)$(FILENAME).cpp
+BUILD_FILE     = ./build/$(FILENAME)
+COMPILER       = g++
 COMPILER_FLAGS = -O2 -Wall
 
 default: compile run
 
 compile:
-	$(COMPILER) $(FILENAME).cpp $(COMPILER_FLAGS) -o $(FILENAME).exe
+	$(COMPILER) $(COMPILER_FLAGS) $(SOURCE_FILE) -o $(BUILD_FILE)
 
 clean:
-	rm -f src/*/*/*.exe
+	rm -f ./build/*
 
 run:
-	$(FILENAME).exe
+	$(BUILD_FILE)
