@@ -1,3 +1,4 @@
+#include "BadLengthException.hpp"
 #include "checkUsername.hpp"
 #include <iostream>
 #include <string>
