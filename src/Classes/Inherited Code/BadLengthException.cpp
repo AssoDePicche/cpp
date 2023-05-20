@@ -1,12 +1,11 @@
-class BadLendthException {
-  public:  
-    int length;
+#include "./BadLengthException.hpp"
 
-    BadLendthException(int n) {
-      length = n;
-    }
+BadLengthException::BadLengthException(int _length)
+{
+  length = _length;
+}
 
-  int what() {
-    return length;
-  }
-};
+int BadLengthException::what()
+{
+  return length;
+}
